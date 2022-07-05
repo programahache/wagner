@@ -9,6 +9,10 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+.negrita{
+    font-weight: bold;
+    color: #FF77A9;
+}
 
 /** CODIGO CSS ABAJO **/
 
@@ -207,6 +211,7 @@ section {
     display: inline-flex;
     gap: 2.5rem;
     padding: 1rem;
+    align-items: center;
 
 }
 
@@ -238,6 +243,9 @@ section {
 
 .medico-dos {
     flex-direction: row-reverse;
+    background-color:rgba(217, 217, 217, 0.9);
+    align-items: center;
+
 }
 
 
@@ -340,7 +348,6 @@ footer {
 
 
 
-
 /*CONTACTO*/
 
 .contacto-contenedor{
@@ -379,6 +386,13 @@ form input{
 
 textarea{
     height: 5rem;
+}
+
+.header-contacto{
+    background-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url(../img/fondo-contactanos.jpeg) !important;
+background-size: cover;
 }
 
 
