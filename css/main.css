@@ -14,9 +14,10 @@ body {
     color: #FF77A9;
 }
 
+
 /** CODIGO CSS ABAJO **/
 
-header {
+.header-principal {
     background-image: linear-gradient(to right,
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)), url(../img/fondo-principal.jpg);
@@ -24,7 +25,11 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    
 }
+
+
+
 
 h1 {
     font-size: 4rem;
@@ -103,6 +108,7 @@ section {
     margin-top: -16px;
     background-color: whitesmoke;
     opacity: .7;
+    flex-direction: column;
 
 }
 
@@ -403,5 +409,6 @@ background-size: cover;
     height: 420px;
     background-color: green;
     width: 100%;
+    
 }
 
