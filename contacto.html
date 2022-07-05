@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="prefetch" href="servicios.html" as="document">
+    <link rel="stylesheet" href="css/whats.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/whats2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
+
+    <title>Wagner Rojas</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="min-banner container-fluid ">
+            <p>!Solicita tu cita hoy! 312 4544684</p>
+        </div>
+
+        <nav class="navbar navbar-expand-lg bg-light container-fluid  menu">
+
+            <div class="d-flex j container-fluid contenedor-menu">
+
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo (1).png" alt="logo-wagner-rojas" width="230px" class="logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
+                    <div class="navbar-nav elementos-nav clearfix">
+                        <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link " href="servicios.html">Servicios</a>
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="informacion container">
+
+            <h1>Wagner Rojas</h1>
+            <hr size="8px">
+            <div class="container-fluid">
+
+                <h2>somos un centro integral para la atencion de la salud de la mujer, centrados en sus necesidades.
+                </h2>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-lg boton">¡Llamanos hoy! 312 4544684</button>
+        </div>
+
+
+    </header>
+
+    <section>
+
+
+        <div class="container">
+            <div class="contacto-contenedor">
+                <div class="informacion-contacto">
+                    <div>
+                        <h4>Wagner Rojas</h4>
+                        <h5>Direccion</h5>
+                        <p>Cra 6 #5-73 Esquina del parque principal Ubeté Cundinamarca </p>
+                    </div>
+
+                    <div>
+                        <h5>horario</h5>
+                        Lunes a sabados de 8:00 a.m a 6:00 p.m
+                    </div>
+
+                    <div>
+                        <h5>Email</h5>
+                        <p>wagner@gmail.com</p>
+                    </div>
+                    <div>
+                        <h5>Telefono</h5>
+                        <p>312 454 4686 - 8 55 37 09</p>
+                    </div>
+
+                </div>
+
+                <div class="contenedor-formulario">
+                    <h2>¡Envianos Un Mensaje!</h2>
+
+                    <form action="">
+                        <input type="text" placeholder="Nombre" class="nombre" id="nombre">
+                        <input type="email" placeholder="Email" class="email" id="email">
+                        <textarea name="textarea" id="textarea"></textarea>
+                    </form>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+     
+
+    </section>
+
+    <!-- BOTON DE whats -->
+
+    <div class="mapa" id="mapa">
+
+
+    </div>
+
+
+    <div class="nav-bottom">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <div class="popup-whatsapp fadeIn">
+            <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                    <i class="material-icons icon-font-color">close</i>
+                </button>
+
+                <p> <img src="img/logo (1).png" width="50"> Hola, ¿en que podemos ayudarle? </p>
+
+            </div>
+            <div class="content-whatsapp -bottom">
+                <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+
+
+
+                <button class="send-msPopup" id="send-btn" type="button">
+                    <i class="material-icons icon-font-color--black">send</i>
+                </button>
+
+            </div>
+        </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+            <div class="float">
+                <i class="fa fa-whatsapp my-float"></i>
+            </div>
+        </button>
+        <div class="circle-anime"></div>
+    </div>
+
+
+    <footer>
+
+        <div class="container footer-contenedor">
+            <div class="footer-contacto">
+
+                <div>
+                    <h4>Wagner Rojas</h4>
+                    <h5>Direccion</h5>
+                    <p>Cra 6 #5-73 Esquina del parque principal Ubeté Cundinamarca </p>
+                </div>
+
+                <div>
+                    <h5>horario</h5>
+                    Lunes a sabados de 8:00 a.m a 6:00 p.m
+                </div>
+
+            </div>
+
+            <div class="footer-contacto">
+                <div>
+                    <h5>Email</h5>
+                    <p>wagner@gmail.com</p>
+                </div>
+                <div>
+                    <h5>Telefono</h5>
+                    <p>312 454 4686 - 8 55 37 09</p>
+                </div>
+
+            </div>
+
+            <div class="footer-logo footer-contacto">
+                <div>
+                    <a href="https://medbyte.co/"> <img src="img/AMedByte 1.png" alt="asociado Medbyte" width="140px"
+                            target="_blank"> </a>
+                </div>
+            </div>
+
+            <div class="redes-sociales footer-contacto">
+                <div>
+                    <img src="img/Redes 1.png" alt="redes sociales" width="120px">
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+    <script src="js/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="js/script2.js"></script>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

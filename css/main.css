@@ -1,0 +1,391 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/** CODIGO CSS ABAJO **/
+
+header {
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/fondo-principal.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: 'Ubuntu', sans-serif !important;
+    color: white;
+    text-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+h3 {
+    color: #23185F;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+h5 {
+    color: #FF77A9;
+}
+
+.bg-rosa {
+    display: flex;
+    background-color: rgba(255, 119, 169, 0.31);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding: 10px;
+
+}
+
+.bg-gris{
+    background-color: whitesmoke;
+}
+
+.bg-rosa p {
+    color: rgba(35, 24, 95, 1);
+    font-weight: bolder;
+    font-size: 21px;
+}
+
+.bg-rosa span {
+    color: #140e3d;
+}
+
+.especialistas-titulo {
+    display: inline;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.especialistas-titulo::after {
+    content: " ";
+    display: block;
+    margin-top: 10px;
+    height: 1px;
+    background-color: #FF77A9;
+    width: 90%;
+    text-align: center;
+
+}
+
+hr {
+    opacity: 1 !important;
+    color: #FF77A9;
+}
+
+section {
+    padding: 2rem;
+}
+
+
+.menu {
+    display: flex;
+    margin-top: -16px;
+    background-color: whitesmoke;
+    opacity: .7;
+
+}
+
+
+.nav-link {
+    color: #1D1360;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: #FF77A9 !important;
+}
+
+.active {
+    color: #FF77A9 !important;
+}
+
+.contenedor-menu {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.min-banner {
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #FF77A9;
+    color: white;
+    font-size: 15px;
+}
+
+.boton {
+    background-color: #1D1360;
+    border-color: white;
+    margin-top: 1rem;
+}
+
+.boton:hover {
+    opacity: .9 !important;
+    background-color: #1D1360;
+    border-color: #FF77A9;
+}
+
+
+.informacion {
+    margin: 10px auto;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+
+}
+
+@media (max-width: 760px) {
+    .informacion {
+        margin: 0 auto;
+
+    }
+
+    header {
+        height: 100%;
+    }
+}
+
+
+.informacion p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: -0.05em;
+}
+
+
+.circulo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    border: 3px solid #23185F;
+    overflow: hidden;
+}
+
+.eclipse {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 220px;
+    height: 220px;
+    border-radius: 150px;
+    background-color: rgba(195, 119, 255, 0.24);
+
+}
+
+.medico-dos .eclipse {
+
+    justify-content: flex-start;
+}
+
+.tarjeta {
+    margin-top: 2rem;
+    display: inline-flex;
+    gap: 2.5rem;
+    padding: 1rem;
+
+}
+
+.tarjeta p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+@media (max-width:540px) {
+    .tarjeta {
+        margin-top: 2rem;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    .tarjeta:last-child,.medico-dos{
+        flex-direction: column !important;
+    }
+
+
+
+}
+
+.medico-dos {
+    flex-direction: row-reverse;
+}
+
+
+
+
+.contenedor-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.mas-info-parrafo {
+    padding: 20px;
+
+}
+
+.vectores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vectores::after {
+    content: " ";
+    display: block;
+    margin-top: 10px;
+    height: 2px;
+    background-color: rgba(151, 71, 255, 1);
+    width: 90%;
+
+}
+
+.vector-contenedor-imagen {
+    transition: 0.5s;
+}
+
+.vector-contenedor-imagen:hover {
+    transform: scale(1.2);
+    padding: 5px;
+
+}
+
+.vector-contenedor-imagen img {
+    object-fit: cover;
+}
+
+.vectores-subt {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: #1D1360;
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: #1D1360;
+}
+
+.footer-contenedor {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 2.5rem;
+}
+
+@media (max-width:539px ) {
+    .footer-contenedor{
+        flex-direction: column;
+    }
+}
+
+.footer-contacto {
+    padding: 5px;
+    width: 50%;
+
+}
+
+.footer-contacto p {
+    font-size: 15px;
+}
+
+
+.redes-sociales {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+
+/**SERVICIOS **/
+
+.header-servicios {
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/fondo-servicios.jpeg) !important;
+    background-size: cover;
+}
+
+
+
+
+/*CONTACTO*/
+
+.contacto-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (max-width:550px) {
+    .contacto-contenedor{
+        flex-direction: column;
+    }
+ 
+
+}
+
+.contacto-contenedor h2{
+    margin-bottom: 1.4rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+form input, textarea{
+    background-color: rgba(217, 217, 217, 0.9);
+    border: none;
+}
+form input{
+    height: 2rem;
+    padding: 10px;
+    width: 100%;
+}
+
+textarea{
+    height: 5rem;
+}
+
+
+/* MAPA */
+.mapa{
+    height: 420px;
+    background-color: green;
+    width: 100%;
+}
+
