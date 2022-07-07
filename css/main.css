@@ -14,6 +14,10 @@ body {
     color: #FF77A9;
 }
 
+a{
+    text-decoration: none;
+}
+
 
 /** CODIGO CSS ABAJO **/
 
@@ -48,6 +52,7 @@ h3 {
 
 h5 {
     color: #FF77A9;
+    
 }
 
 .bg-rosa {
@@ -105,7 +110,7 @@ section {
 
 .menu {
     display: flex;
-    margin-top: -16px;
+
     background-color: whitesmoke;
     opacity: .7;
     flex-direction: column;
@@ -115,7 +120,7 @@ section {
 
 .nav-link {
     color: #1D1360;
-    text-transform: uppercase;
+    
     font-weight: bold;
     font-size: 18px;
 }
@@ -135,13 +140,7 @@ section {
     width: 90%;
 }
 
-.min-banner {
-    margin-bottom: 0;
-    text-align: center;
-    background-color: #FF77A9;
-    color: white;
-    font-size: 15px;
-}
+
 
 .boton {
     background-color: #1D1360;
@@ -372,6 +371,18 @@ footer {
 
 }
 
+.informacion-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.inf-contacto h5,p{
+    margin: 0;
+    padding: 0;
+}
+
 .contacto-contenedor h2{
     margin-bottom: 1.4rem;
 }
@@ -412,3 +423,72 @@ background-size: cover;
     
 }
 
+
+
+
+/**BLOG**/
+
+.header-blog{
+    background-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url(../img/fondo-principal.jpg);
+height: auto;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+}
+
+
+.contenedor-blog{
+    gap: 1rem;
+}
+
+.boton-modal{
+    margin-top: .6rem;
+}
+
+.tarjeta-blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.col-md-4 img{
+   height: 100% !important;
+    
+}
+
+.contenedor-blog{
+    padding: 1rem;
+}
+
+@media (max-width:768px ) {
+    .contenedor-blog{
+        flex-direction: column;
+        
+    }
+
+    .col-md-4{
+       height: auto;
+         
+     }
+     .col-md-4 img{
+        height: 300px !important;
+        width: 100%;
+        object-fit: cover;
+     }
+}
+
+@media (min-width:768px ) {
+  
+
+    .col-md-4{
+       height: auto;
+         
+     }
+     .col-md-4 img{
+        height: 300px !important;
+        width: 100%;
+        object-fit: cover;
+     }
+}
