@@ -8,5 +8,3 @@ L.marker([5.305862,-73.815035]).addTo(map)
     .bindPopup('Estamos ubicados.<br> AQUI.')
     .openPopup();
 
-
-    
